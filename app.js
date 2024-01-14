@@ -1,28 +1,17 @@
 // - working code
 // - click button to add button
-const container = document.getElementById("container");
-const changes = document.querySelector('.changes');
-const remover = document.querySelectorAll('.remover');
+const container = document.querySelector("#container");
+const spawner = document.querySelector('.spawner');
+// const remover = document.querySelector('.remover');
 
-changes.addEventListener("click", () => {
-    let button = document.createElement("button");
-    container.appendChild(button);
-    button.innerText = "delete";
-    button.className = "remover";
+spawner.addEventListener('click', function () {
+    let btn = document.createElement("button");
+    container.appendChild(btn);
+    btn.innerText = "delete";
+    btn.className = "remover";
     console.log('it worked!');
 });
 
-// remover.addEventListener("click", () => {
+// remover.addEventListener('click', function () {
 //     console.log('it worked!');
 // });
-
-// - reference code
-
-
-// for (let i = 0; i < 100; i++) {
-//     /*First iliteration: button = a new DOM object, second iliteration:
-//       button = a new DOM object, etc.*/
-//     let button = document.createElement("button");
-//     container.appendChild(button);
-//     button.innerText = "Button";
-// }
