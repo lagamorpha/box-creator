@@ -1,14 +1,14 @@
 // - working code
 // - click button to add button
 const container = document.querySelector("#container");
-const spawner = document.querySelector('.spawner');
+const spawner = document.querySelector('#spawner');
 // const remover = document.querySelector('.remover');
 
-spawner.addEventListener('click', function () {
-    let btn = document.createElement("button");
+spawner.addEventListener('click', function spawn() {
+    let btn = document.createElement('button');
     container.appendChild(btn);
-    btn.innerText = "delete";
-    btn.className = "remover";
+    btn.innerText = 'delete';
+    btn.className = 'remover';
     console.log('it worked!');
 });
 
