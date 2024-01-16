@@ -19,7 +19,14 @@ for (let button of buttons) {
     });
 }
 
-// move boxes using absolute position
+// move boxes using absolute position, change color if non-functional button
+const makeRandColor = () => {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 window.addEventListener('keydown', function (e) {
     switch (e.code) {
         case 'ArrowUp':
@@ -35,6 +42,11 @@ window.addEventListener('keydown', function (e) {
             console.log("RIGHT!");
             break
         default:
+            // const newColor = makeRandColor();
+            // for (let button of buttons) {
+            //     // document.body.style.buttons.backgroundColor = newColor;
+            //     // buttons.innerText = newColor;
+            // }
             console.log("IGNORED!")
     }
 })
