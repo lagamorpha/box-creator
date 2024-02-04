@@ -56,7 +56,7 @@ spawner.addEventListener('click', function spawn() {
     let btn = document.createElement('button');
     container.appendChild(btn);
     btn.innerText = 'delete';
-    // btn.style.color = makeRandColor();
+    btn.style.color = makeRandColor();
     btn.style.backgroundColor = makeOppoColor();
 });
 
