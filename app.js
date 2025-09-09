@@ -16,13 +16,14 @@ remover.addEventListener("click", () => {
     console.log('it worked!');
 });
 
-// - reference code
+spawner.addEventListener('click', function spawn() {
+    let btn = document.createElement('button');
+    container.appendChild(btn);
+    btn.innerText = 'delete';
+    btn.style.color = makeRandColor();
+    btn.style.backgroundColor = makeOppoColor();
+});
 
-
-// for (let i = 0; i < 100; i++) {
-//     /*First iliteration: button = a new DOM object, second iliteration:
-//       button = a new DOM object, etc.*/
-//     let button = document.createElement("button");
-//     container.appendChild(button);
-//     button.innerText = "Button";
-// }
+container.addEventListener('click', function (e) {
+    e.target.nodeName === 'BUTTON' && e.target.remove();
+});
