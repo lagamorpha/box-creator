@@ -1,6 +1,6 @@
 // - working code
 // - click button to add button
-const creator = document.getElementById('creator');
+const creator = document.querySelector('button[id="creator"]');
 
 // color functions
 const makeRandColor = () => {
