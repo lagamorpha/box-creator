@@ -2,7 +2,7 @@
 // - click button to add button
 const container = document.getElementById("container");
 const changes = document.querySelector('.changes');
-const remover = document.querySelectorAll('.remover');
+const remover = document.querySelectorAll('#remover');
 
 changes.addEventListener("click", () => {
     let button = document.createElement("button");
@@ -12,9 +12,9 @@ changes.addEventListener("click", () => {
     console.log('it worked!');
 });
 
-// remover.addEventListener("click", () => {
-//     console.log('it worked!');
-// });
+remover.addEventListener("click", () => {
+    console.log('it worked!');
+});
 
 // - reference code
 
