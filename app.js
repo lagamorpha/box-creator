@@ -1,29 +1,28 @@
 // - working code
 // - click button to add button
-const container = document.getElementById("container");
-const changes = document.querySelector('.changes');
-const remover = document.querySelectorAll('#remover');
+// const container = document.getElementById("container");
+const creator = document.getElementById('creator');
+// const test = document.getElementById('test');
+const destroyer = document.getElementsByClassName('destroyer');
 
-changes.addEventListener("click", () => {
+// test.addEventListener("click", () => {
+//     console.log("Click");
+// });
+
+creator.addEventListener("click", () => {
     let button = document.createElement("button");
     container.appendChild(button);
     button.innerText = "delete";
-    button.className = "remover";
+    button.className = "destroyer";
+    button.style.color = makeRandColor();
+    button.style.backgroundColor = makeOppoColor();
     console.log('it worked!');
 });
 
-remover.addEventListener("click", () => {
+destroyer.addEventListener("click", () => {
     console.log('it worked!');
 });
 
-spawner.addEventListener('click', function spawn() {
-    let btn = document.createElement('button');
-    container.appendChild(btn);
-    btn.innerText = 'delete';
-    btn.style.color = makeRandColor();
-    btn.style.backgroundColor = makeOppoColor();
-});
-
-container.addEventListener('click', function (e) {
-    e.target.nodeName === 'BUTTON' && e.target.remove();
-});
+// container.addEventListener('click', function (e) {
+//     e.target.nodeName === 'BUTTON' && e.target.remove();
+// });
